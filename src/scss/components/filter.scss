@@ -1,0 +1,136 @@
+.podbor-filter {
+  margin-bottom: 10px;
+}
+
+.podbor-filter-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 40px;
+
+  .h1 {
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 0;
+
+    @media(max-width: 1199px) {
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .logo {
+    margin-bottom: 4px;
+    display: block;
+  }
+}
+
+.podbor-filter-phone {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  &:hover {
+    opacity: .85;
+  }
+}
+
+.podbor-filter-body {
+  border-radius: 30px;
+  padding: 24px;
+  background: var(--light);
+
+  @media(max-width: 991px) {
+    padding: 24px 16px 16px;
+    border-radius: 20px;
+  }
+}
+
+.podbor-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 8px;
+  row-gap: 24px;
+  @media(max-width: 991px){
+    row-gap: 18px;
+  }
+
+  .column-4 {
+    grid-column: 4 span;
+
+    @media(max-width: 991px) {
+      grid-column: 6 span;
+    }
+
+    @media(max-width: 767px) {
+      grid-column: 12 span;
+    }
+  }
+
+  .column-8 {
+    grid-column: 8 span;
+
+    @media(max-width: 991px) {
+      grid-column: 6 span;
+    }
+
+    @media(max-width: 767px) {
+      grid-column: 12 span;
+    }
+  }
+}
+
+.podbor-filter-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media(max-width: 767px){
+    flex-direction: column-reverse;
+    row-gap: 16px;
+  }
+  .button {
+    @media(max-width: 575px){
+      width: 100%;
+    }
+  }
+}
+
+.input-hidden {
+  display: none;
+}
+
+.podbor-filter-more.active {
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.podbor-filter-right {
+  padding-bottom: 7px;
+
+  @media(max-width: 1199px) {
+    padding-bottom: 0;
+    margin-bottom: 24px;
+  }
+
+  .logo {
+    img {
+      width: 138px;
+    }
+  }
+}
+
+.logo {
+  &:hover {
+    opacity: .85;
+  }
+}
+
+.podbor-filter-more.active img {
+  bottom: 1px;
+}

@@ -1,0 +1,35 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+ // Containers
+:root { 
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: 'Montserrat', sans-serif;
+  --outline: #e3ebf2;
+  --main-color: #1f1f1f;
+  --black: #1f1f1f;
+  --black40: rgba(31, 31, 31, 0.4);
+  --black60: rgba($color: #000000, $alpha: .6);
+  --background: #f3f7fd;
+  --success: #27c340;
+  --error: #e02828;
+  --yellow: #ffc529;
+  --disabled: #c5cfdc;
+  --light: #f3f3f3;
+  --light-hover: #fff;
+  --primary: #C9272E;
+  --stroke: #e6e6e6;
+  --secondary: #2169c9;
+  --secondary-color-black: #2b3e73;
+  --secondary-text-color-black: #a9aaad;
+}

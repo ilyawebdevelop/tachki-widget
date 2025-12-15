@@ -1,0 +1,352 @@
+<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalContent">
+
+    <div class="modalForm">
+
+      <div class="d-flex justify-content-between mb-4 flex-column-reverse gap-4 gap-md-0 flex-md-row">
+        <h2 class="h2 mb-0">
+          Оставить заявку
+        </h2>
+        <div class="d-flex flex-column modalOrderLogoW">
+          <a href="#" class="logo">
+            <img src="@img/admin/logo/logo.svg" alt="logo">
+          </a>
+          <a href="tel:+73952199030" class="podbor-filter-phone">
+            <img src="@img/icons/phone.svg" alt="phone">
+            +7 3952 199 030
+          </a>
+        </div>
+      </div>
+
+      <p class="modalOrderDescr mb-4">
+        Оставьте ваш номер, и мы свяжемся с вами
+      </p>
+      <div class="d-flex mb-4 gap-2 flex-column flex-md-row">
+        <div class="inputW form-floating">
+          <input id="modalOrderName" type="text" class="formInput form-control" placeholder="Ваше имя">
+          <label for="modalOrderName">Ваше имя</label>
+        </div>
+        <div class="inputW form-floating">
+          <input id="modalOrderPhone" type="tel" class="formInput form-control" placeholder="+7 (XXX) XXX-XX-XX">
+          <label for="modalOrderPhone">+7 (XXX) XXX-XX-XX</label>
+        </div>
+        <button class="modalOrderBtn button button--primary">
+          Отправить
+        </button>
+      </div>
+
+      <div class="agreement mb-4">
+        <div class="rect"></div>
+        <div class="agreementW">
+          <input id="modalOrderAgree" type="checkbox" checked>
+          <label for="modalOrderAgree">
+            <div class="rect"></div>
+            <div class="agreementText">
+              Согласен на <a href="#">обработку персональных данных</a>
+            </div>
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- modal -->
+<!-- product -->
+<div class="modal" id="modalProduct">
+
+  <div class="modalContent">
+    <h2 class="h2 d-none d-md-block">
+      Mitsubishi Outlander, 2.5 л., 2021
+    </h2>
+
+    <div class="modalProductMain mb-3 mb-md-4">
+
+      <div class="swiper modalProductSlider">
+        <div class="swiper-wrapper">
+
+          <a href="@img/admin/product/image-1.jpg" class="swiper-slide modalProductSlide" data-fancybox="product">
+            <img src="@img/admin/product/image-1.jpg" alt="image">
+          </a>
+          <a href="@img/admin/product/image-1.jpg" class="swiper-slide modalProductSlide" data-fancybox="product">
+            <img src="@img/admin/product/image-1.jpg" alt="image">
+          </a>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <button class="navArrow navArrowPrev">
+          <img src="@img/icons/slider-prev.svg" alt="icon">
+        </button>
+        <button class="navArrow navArrowNext">
+          <img src="@img/icons/slider-next.svg" alt="icon">
+        </button>
+      </div>
+
+      <h2 class="h2 d-block d-md-none mt-3">
+        Mitsubishi Outlander, 2.5 л., 2021
+      </h2>
+
+      <div class="modalProductContent">
+
+        <div class="modalProductPrices mb-3">
+          <div class="d-flex flex-column gap-3 gap-md-4">
+            <div class="d-flex flex-column gap-1 gap-md-2 align-items-end">
+              <span class="fw-bold text-uppercase fz-md-14 fw-md-semibold">Цена в Японии</span>
+              <div class="d-flex gap-2 flex-row-reverse flex-md-column align-items-center align-items-md-end">
+                <span class="fz-24 fz-md-16 fw-bold black60">1 200 000 ¥</span>
+                <span class="black60">~1 100 000 ₽</span>
+              </div>
+
+            </div>
+            <div class="d-flex flex-column gap-1 gap-md-2 align-items-end">
+              <span class="color-primary text-uppercase fw-bold fz-md-14 fw-md-semibold">Цена во Владивостоке</span>
+              <span class="fz-24 fz-md-20 fw-bold">~2 200 000 ₽</span>
+              <button class="d-flex align-items-center gap-2 modalProductInfo" type="button" data-toggle="tooltip"
+                data-placement="right"
+                title="Цена зависит от объема работы, выбранных опций и индивидуальных условий контракта. Подробный расчет здесь.">
+                <img src="@img/icons/info.svg" alt="icon">
+                <span class="color-primary">Как формируется цена?</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button class="button button--primary w-100 fw-semibold mb-3">
+          Оставить заявку на авто
+        </button>
+        <a href="#" class="button button--gray modalProductSocial fw-semibold fz-14 w-100" target="_blank"
+          rel="nofollow">
+          Связаться с менеджером
+          <img src="@img/admin/socials/tg.svg" alt="icon">
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="bg--light p-3 p-md-4 rounded-24 mb-3">
+      <h3 class="h3 color-primary text-uppercase fw-bold mb-3 mb-md-4 text-center text-md-start fz-md-14">характеристики
+        автомобиля</h3>
+
+      <div class="d-block">
+        <div class="podbor-param-item">
+          <span class="black60">Год выпуска</span>
+          <span></span>
+          <span>2021 г.</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Пробег</span>
+          <span></span>
+          <span> 19 000 км</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Кузов</span>
+          <span></span>
+          <span>GF8W</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Оценка</span>
+          <span></span>
+          <span>RA</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Объем двигателя</span>
+          <span></span>
+          <span>2500 см³</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Мощность</span>
+          <span></span>
+          <span>184 л.с</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Привод</span>
+          <span></span>
+          <span>FULLTIME4WD</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Трансмиссия</span>
+          <span></span>
+          <span>FAT</span>
+        </div>
+        <div class="podbor-param-item">
+          <span class="black60">Комплектация</span>
+          <span></span>
+          <span>24G Navi PKG 4WD</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modalProductServices mb-3">
+      <ul>
+        <li>
+          <a class="modalProductService" href="#">
+            <div class="modalProductServiceTitle">Trade-in</div>
+            <img src="@img/admin/modal/service-1.png" alt="image" class="modalProductServiceImage">
+          </a>
+        </li>
+        <li>
+          <a class="modalProductService" href="#" target="_blank" rel="nofollow">
+            <div class="modalProductServiceTitle">ТГ-канал</div>
+            <img src="@img/admin/modal/service-2.png" alt="image" class="modalProductServiceImage">
+            <img src="@img/admin/socials/tg.svg" alt="icon" class="modalProductServiceSocial">
+          </a>
+        </li>
+        <li>
+          <a class="modalProductService" href="#">
+            <div class="modalProductServiceTitle">Автокредит</div>
+            <img src="@img/admin/modal/service-3.png" alt="image" class="modalProductServiceImage">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg--light p-3 p-md-4 rounded-24 mb-3">
+      <h3 class="h3 color-primary text-uppercase fw-bold mb-4">аукцион</h3>
+
+      <div class="paramActionWrap">
+
+        <div class="d-block mb-4">
+          <div class="podbor-param-item">
+            <span class="black60">Год выпуска</span>
+            <span></span>
+            <span>2021 г.</span>
+          </div>
+          <div class="podbor-param-item">
+            <span class="black60">Пробег</span>
+            <span></span>
+            <span> 19 000 км</span>
+          </div>
+          <div class="podbor-param-item">
+            <span class="black60">Кузов</span>
+            <span></span>
+            <span>GF8W</span>
+          </div>
+        </div>
+        <div class="podbor-hidden mb-2 mb-md-4">
+          <img class="mb-4" src="@img/admin/product/chertezh.jpg" alt="image">
+          <div class="d-block mb-4">
+            <div class="podbor-param-item">
+              <span class="black60">А1</span>
+              <span></span>
+              <span>Мелкая царапина</span>
+            </div>
+            <div class="podbor-param-item">
+              <span class="black60">A2</span>
+              <span></span>
+              <span> Царапина</span>
+            </div>
+            <div class="podbor-param-item">
+              <span class="black60">A3</span>
+              <span></span>
+              <span>Большая Царапина</span>
+            </div>
+            <div class="podbor-param-item">
+              <span class="black60">E1</span>
+              <span></span>
+              <span>Небольшая Вмятина</span>
+            </div>
+            <div class="podbor-param-item">
+              <span class="black60">E2</span>
+              <span></span>
+              <span> Несколько Небольших Вмятин</span>
+            </div>
+            <div class="podbor-param-item">
+              <span class="black60">X1</span>
+              <span></span>
+              <span>Маленькая Трещина на Ветровом стекле (приблизительно 1 см)</span>
+            </div>
+          </div>
+        </div>
+        <button class="button param-action mt-0 mt-md-4" type="button">
+          <span class="podbor-filter-more-text">Аукционный лист</span>
+          <img src="@img/icons/arrow-down.svg" alt="icon">
+        </button>
+      </div>
+
+    </div>
+
+    <div class="bg--light p-4 rounded-24 mb-4">
+      <h3 class="h3 color-primary text-uppercase fw-bold mb-4">Расчет цены</h3>
+      <div class="d-flex gap-3 justify-content-between mb-4 align-items-start">
+        <h3 class="h3 text-uppercase fw-bold">Стоимость авто на аукционе в японии</h3>
+        <div class="d-flex gap-1 gap-md-2 flex-column-reverse flex-md-row">
+          <span class="black60 text-end fz-md-13">1 200 000 ¥</span>
+          <span class="fw-bold text-end color-md-black60" style="min-width: 120px;">~1 100 000 ₽</span>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column pb-4 mb-4 border-b-black40">
+        <div class="d-flex gap-3 justify-content-between mb-3 mb-md-2">
+          <span class="fz-md-13">Комиссия агента в Японии</span>
+          <div class="d-flex gap-1 gap-md-2 flex-column-reverse flex-md-row">
+            <span class="black60 text-end fz-md-13">100 000 ¥</span>
+            <span class="text-end" style="min-width: 120px;">~100 000 ₽</span>
+          </div>
+        </div>
+        <div class="d-flex gap-3 justify-content-between mb-3 mb-md-2">
+          <span class="fz-md-13">Доставка авто до Владивостока</span>
+          <div class="d-flex gap-1 gap-md-2 flex-column-reverse flex-md-row">
+            <span class="black60 text-end fz-md-13">100 000 ¥</span>
+            <span class="text-end" style="min-width: 120px;">~100 000 ₽</span>
+          </div>
+        </div>
+        <div class="d-flex gap-3 justify-content-between mb-3 mb-md-2">
+          <span class="fz-md-13">Расходы по России</span>
+          <div class="d-flex gap-1 gap-md-2 flex-column-reverse flex-md-row">
+            <span class="text-end" style="min-width: 120px;">~100 000 ₽</span>
+          </div>
+        </div>
+        <div class="d-flex gap-3 justify-content-between mb-3 mb-md-2">
+          <span class="fz-md-13">Утилизационный сбор</span>
+          <div class="d-flex gap-1 gap-md-2 flex-column-reverse flex-md-row">
+            <span class="text-end" style="min-width: 120px;">700 000 ₽</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-between">
+        <h3 class="h3 color-primary text-uppercase fw-bold fw-md-semibold mb-0">Цена во Владивостоке</h3>
+        <span class="fz-24 fw-bold fz-md-16 text-nowrap">~2 200 000 ₽</span>
+      </div>
+
+    </div>
+
+    <div class="bg--black p-3 p-md-4 rounded-24">
+      <form action="#" class="modalProductForm">
+        <div class="modalProductFormInputW gap-2 mb-4">
+          <div class="inputW form-floating">
+            <input id="modalProductName" type="text" class="formInput form-control" placeholder="Ваше имя">
+            <label for="modalProductName">Ваше имя</label>
+          </div>
+          <div class="inputW form-floating">
+            <input id="modalProductPhone" type="tel" class="formInput form-control" placeholder="+7 (XXX) XXX-XX-XX">
+            <label for="modalProductPhone">+7 (XXX) XXX-XX-XX</label>
+          </div>
+        </div>
+        <div class="agreement mb-4">
+          <div class="rect"></div>
+          <div class="agreementW">
+            <input id="orderAgree" type="checkbox" checked>
+            <label for="orderAgree">
+              <div class="rect"></div>
+              <div class="agreementText">
+                Согласен на <a href="#">обработку персональных данных</a>
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="modalProductFormBtn button button--primary fw-bold">
+          Оставить заявку
+        </button>
+      </form>
+    </div>
+
+  </div>
+</div>

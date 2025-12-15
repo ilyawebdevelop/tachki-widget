@@ -1,0 +1,157 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear, opacity .2s linear;
+  column-gap: 10px;
+  height: 52px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media(max-width: 991px) {
+    font-size: 14px;
+    line-height: 20px;
+    height: 48px;
+    font-weight: 600;
+  }
+  @media(max-width: 355px){
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+  }
+
+  &--lg {
+    height: 65px;
+
+    @media(max-width: 991px) {
+      height: 50px;
+    }
+  }
+
+  &--transparent {
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--gray {
+    background-color: var(--light);
+  }
+
+  &--primary {
+    background-color: var(--primary);
+    color: #fff;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+  }
+}
+
+.podbor-filter-grid {
+  margin-bottom: 24px;
+}
+
+.podbor-filter-more {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media(max-width: 991px) {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  @media(max-width: 349px) {
+    font-size: 12px;
+  }
+
+  img {
+    position: relative;
+    bottom: 2px;
+  }
+}
+
+.podbor-filter-btn {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.podbor-item-btn {
+  height: 48px;
+  border-radius: 16px;
+  margin-left: auto;
+  @media(max-width: 767px){
+    margin-left: unset;
+    margin-right: auto;
+    margin-top: 4px;
+  }
+  @media(max-width: 575px){
+    margin-left: auto;
+    width: 100%;
+  }
+}
+
+.podbor-item-link {
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  @media(max-width: 991px){
+    margin-left: auto;
+    margin-right: unset;
+  }
+  @media(max-width: 767px){
+    margin-left: unset;
+  }
+  @media(max-width: 575px){
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+.modalProductSocial {
+  img {
+    width: 20px;
+  }
+}
+
+.modalProductFormBtn {
+  margin-left: auto;
+  @media(max-width: 575px){
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+.modalOrderBtn {
+  min-width: 177px;
+  flex-shrink: 0;
+  height: 52px;
+  @media(max-width: 767px){
+    width: 100%;
+  }
+}
