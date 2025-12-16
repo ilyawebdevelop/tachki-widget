@@ -81,3 +81,21 @@ $(function () {
 })
 
 
+$('.modalProductInfo').on('click', function(event) {
+    event.preventDefault(); // Stop the browser from navigating
+    document.getElementById('price_more_calc').scrollIntoView({
+       behavior: 'smooth'
+    });
+    // $.fancybox.open({
+    //     // your fancybox options
+    // });
+});
+$('.modalScrollToForm').on('click', function(event) {
+    event.preventDefault(); // Stop the browser from navigating
+    document.getElementById('modalProductForm').scrollIntoView({
+       behavior: 'smooth'
+    });
+    // $.fancybox.open({
+    //     // your fancybox options
+    // });
+});

@@ -180,8 +180,9 @@ section {
     font-size: 14px;
   }
 }
+
 .fz-md-13 {
-  @media(max-width: 767px){
+  @media(max-width: 767px) {
     font-size: 13px;
     line-height: 20px;
   }
@@ -514,7 +515,8 @@ h3,
 
 .rounded-24 {
   border-radius: 24px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     border-radius: 20px;
   }
 }
@@ -567,4 +569,24 @@ h3,
   &-active {
     background-color: #C9272E;
   }
+}
+
+/* The entire scrollbar */
+.modal::-webkit-scrollbar {
+  width: 6px;
+  /* vertical scrollbar width */
+
+  /* horizontal scrollbar height */
+}
+
+/* The draggable handle */
+.modal::-webkit-scrollbar-thumb {
+  background-color: #C9272E;
+  /* Green color */
+  border-radius: 5px;
+}
+
+/* The track (background) of the scrollbar */
+.modal::-webkit-scrollbar-track {
+  background-color: transparent;
 }

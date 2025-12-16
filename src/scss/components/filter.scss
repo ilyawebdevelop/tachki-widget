@@ -35,9 +35,6 @@
   align-items: center;
   column-gap: 8px;
 
-  &:hover {
-    opacity: .85;
-  }
 }
 
 .podbor-filter-body {
@@ -125,11 +122,6 @@
   }
 }
 
-.logo {
-  &:hover {
-    opacity: .85;
-  }
-}
 
 .podbor-filter-more.active img {
   bottom: 1px;
