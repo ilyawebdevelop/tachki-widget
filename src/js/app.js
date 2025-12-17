@@ -2,6 +2,7 @@ import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import "./modules/inputmask.min.js";
+import "../../node_modules/chosen-js/chosen.jquery.min.js";
 import "./modules/bootstrap.bundle.min.js";
 import './components.js';
 
@@ -10,7 +11,7 @@ flsFunctions.isWebp();
 Fancybox.bind("[data-fancybox]", {
   closeButton: true,
 });
-
+$(".chosen-select").chosen({no_results_text: "Ничего не найдено!"}); 
 let inputs = document.querySelectorAll('input[type="tel"]');
 // let im = new Inputmask('+7 (999) 999-99-99');
 let im = new Inputmask({
@@ -27,8 +28,6 @@ let im = new Inputmask({
     return pastedValue;
   }
 });
-
-
 
 im.mask(inputs);
 
