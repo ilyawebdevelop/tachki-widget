@@ -12,7 +12,24 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 let inputs = document.querySelectorAll('input[type="tel"]');
-let im = new Inputmask('+7 (999) 999-99-99');
+// let im = new Inputmask('+7 (999) 999-99-99');
+let im = new Inputmask({
+  mask: '+7 (999) 999-99-99',
+  onBeforePaste: function (pastedValue, opts) {
+    // Удаляем всё, кроме цифр
+    var processedValue = pastedValue.replace(/\D/g, "");
+
+    // Если первая цифра 7 или 8 и в строке 11 цифр, убираем первую
+    if (processedValue.length === 11 && (processedValue[0] === '7' || processedValue[0] === '8')) {
+      return processedValue.substring(1);
+    }
+
+    return pastedValue;
+  }
+});
+
+
+
 im.mask(inputs);
 
 // Import swiper
@@ -81,21 +98,15 @@ $(function () {
 })
 
 
-$('.modalProductInfo').on('click', function(event) {
-    event.preventDefault(); // Stop the browser from navigating
-    document.getElementById('price_more_calc').scrollIntoView({
-       behavior: 'smooth'
-    });
-    // $.fancybox.open({
-    //     // your fancybox options
-    // });
+$('.modalProductInfo').on('click', function (event) {
+  event.preventDefault(); // Stop the browser from navigating
+  document.getElementById('price_more_calc').scrollIntoView({
+    behavior: 'smooth'
+  });
 });
-$('.modalScrollToForm').on('click', function(event) {
-    event.preventDefault(); // Stop the browser from navigating
-    document.getElementById('modalProductForm').scrollIntoView({
-       behavior: 'smooth'
-    });
-    // $.fancybox.open({
-    //     // your fancybox options
-    // });
+$('.modalScrollToForm').on('click', function (event) {
+  event.preventDefault(); // Stop the browser from navigating
+  document.getElementById('modalProductForm').scrollIntoView({
+    behavior: 'smooth'
+  });
 });

@@ -15007,7 +15007,7 @@ h3,
   display: none;
   width: 915px;
   height: fit-content;
-  border-radius: 24px;
+  border-radius: 5px;
   background-color: var(--black);
   color: var(--main-color);
 }
@@ -15078,7 +15078,7 @@ h3,
 
 #modalProduct {
   width: 960px;
-  border-radius: 30px;
+  border-radius: 5px;
   padding: 24px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
   background: var(--light-hover);
