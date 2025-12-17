@@ -15,6 +15,9 @@ Fancybox.bind("[data-fancybox]", {
 $('.select-field').select2({
     maximumInputLength: 20 // only allow terms up to 20 characters long
 });
+$(".select-info").select2({
+  tags: true
+});
 
 let inputs = document.querySelectorAll('input[type="tel"]');
 // let im = new Inputmask('+7 (999) 999-99-99');
