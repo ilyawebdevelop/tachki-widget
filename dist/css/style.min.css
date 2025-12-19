@@ -15560,10 +15560,6 @@ h3,
   stroke: #000;
 }
 
-.podbor-filter-grid {
-  margin-bottom: 24px;
-}
-
 .podbor-filter-more {
   font-size: 16px;
   line-height: 150%;
@@ -15616,11 +15612,16 @@ h3,
   width: 140px;
   margin-left: auto;
   margin-right: auto;
+  height: 48px;
+  border: 1px solid var(--primary);
+  margin-top: 10px;
+  border-radius: 16px;
 }
 @media (max-width: 991px) {
   .podbor-item-link {
     margin-left: auto;
     margin-right: unset;
+    margin-top: 0;
   }
 }
 @media (max-width: 767px) {
@@ -15636,7 +15637,8 @@ h3,
   }
 }
 .podbor-item-link:hover {
-  color: var(--primary);
+  background-color: var(--primary);
+  color: #fff;
 }
 
 .modalProductSocial img {
@@ -16205,12 +16207,6 @@ h3,
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 8px;
-  row-gap: 24px;
-}
-@media (max-width: 991px) {
-  .podbor-filter-grid {
-    row-gap: 18px;
-  }
 }
 .podbor-filter-grid .column-4 {
   grid-column: 4 span;
@@ -16257,6 +16253,13 @@ h3,
 }
 
 .input-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  margin: 0 !important;
+}
+.input-hidden label {
   display: none;
 }
 

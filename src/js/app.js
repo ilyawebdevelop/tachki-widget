@@ -48,10 +48,10 @@ podborFilterMore.forEach(el => {
   let buttonText = el.querySelector('span');
 
   el.addEventListener('click', () => {
-    if (buttonText.innerHTML == "Расширенный поиск") {
+    if (buttonText.innerHTML == "Больше фильтров") {
       buttonText.innerHTML = "Свернуть";
     } else if (buttonText.innerHTML == "Свернуть") {
-      buttonText.innerHTML = "Расширенный поиск";
+      buttonText.innerHTML = "Больше фильтров";
     } else {
       null
     }

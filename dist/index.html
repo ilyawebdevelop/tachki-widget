@@ -65,7 +65,7 @@
               <form action="#" class="podbor-filter-form">
                 <div class="podbor-filter-grid">
 
-                  <div class="column-4 select-wrapper">
+                  <div class="column-4 select-wrapper mb-3 mb-lg-4">
                     <label class="form-label" for="marka">марка</label>
                     <select class="select-field" name="marka" id="marka">
                       <option value="2">Mitsubishi</option>
@@ -73,19 +73,19 @@
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper">
-                    <label class="form-label" for="marka">Модель</label>
+                  <div class="column-4 select-wrapper mb-3 mb-lg-4">
+                    <label class="form-label" for="model">Модель</label>
                     <select class="select-field" name="model" id="model">
                       <option value="2">Outlander</option>
                       <option value="3">Honda</option>
                     </select>
                   </div>
 
-                  <div class="column-4 grid-cols-2">
+                  <div class="column-4 grid-cols-2 mb-3 mb-lg-4">
                     <div class="col">
                       <div class="select-wrapper">
-                        <label class="form-label" for="marka">Год от</label>
-                        <select name="marka" id="marka">
+                        <label class="form-label" for="year_from">Год от</label>
+                        <select class="select-info" name="year_from" id="year_from">
                           <option value="2">2020</option>
                           <option value="3">2021</option>
                         </select>
@@ -93,8 +93,8 @@
                     </div>
                     <div class="col">
                       <div class="select-wrapper">
-                        <label class="form-label" for="marka">до</label>
-                        <select name="marka" id="marka">
+                        <label class="form-label" for="year_to">до</label>
+                        <select class="select-info" name="year_to" id="year_to">
                           <option value="2">2025</option>
                           <option value="3">2024</option>
                         </select>
@@ -102,13 +102,13 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">пробег, км</div>
                     <div class="grid-cols-2">
                       <div class="col">
                         <div class="select-wrapper">
-                          <label class="form-label" for="marka">От</label>
-                          <select class="select-info" name="year_from" id="year_from">
+                          <label class="form-label" for="probeg_from">От</label>
+                          <select class="select-info" name="probeg_from" id="probeg_from">
                             <option value="2">2020</option>
                             <option value="3">2021</option>
                           </select>
@@ -116,8 +116,8 @@
                       </div>
                       <div class="col">
                         <div class="select-wrapper">
-                          <label class="form-label" for="marka">До</label>
-                          <select class="select-info" name="year_to" id="year_to">
+                          <label class="form-label" for="probeg_do">До</label>
+                          <select class="select-info" name="probeg_do" id="probeg_do">
                             <option value="2">2025</option>
                             <option value="3">2024</option>
                           </select>
@@ -126,13 +126,13 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">Объем двигателя, л</div>
                     <div class=" grid-cols-2">
                       <div class="col">
                         <div class="select-wrapper">
-                          <label class="form-label" for="marka">От</label>
-                          <select name="marka" id="marka">
+                          <label class="form-label" for="obem_dvig_from">От</label>
+                          <select class="select-info" name="obem_dvig_from" id="obem_dvig_from">
                             <option value="2">2020</option>
                             <option value="3">2021</option>
                           </select>
@@ -140,8 +140,8 @@
                       </div>
                       <div class="col">
                         <div class="select-wrapper">
-                          <label class="form-label" for="marka">До</label>
-                          <select name="marka" id="marka">
+                          <label class="form-label" for="obem_dvig_to">До</label>
+                          <select class="select-info" name="obem_dvig_to" id="obem_dvig_to">
                             <option value="2">2025</option>
                             <option value="3">2024</option>
                           </select>
@@ -150,13 +150,13 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">мощность по ПТС, л.с.</div>
                     <div class=" grid-cols-2">
                       <div class="col">
                         <div class="select-wrapper">
-                          <label class="form-label" for="marka">От</label>
-                          <select name="marka" id="marka">
+                          <label class="form-label" for="moshn_from">От</label>
+                          <select class="select-info" name="moshn_from" id="moshn_from">
                             <option value="2">2020</option>
                             <option value="3">2021</option>
                           </select>
@@ -164,8 +164,8 @@
                       </div>
                       <div class="col">
                         <div class="select-wrapper">
-                          <label class="form-label" for="marka">До</label>
-                          <select name="marka" id="marka">
+                          <label class="form-label" for="moshn_do">До</label>
+                          <select class="select-info" name="moshn_do" id="moshn_do">
                             <option value="2">2025</option>
                             <option value="3">2024</option>
                           </select>
@@ -174,39 +174,39 @@
                     </div>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
-                    <label class="form-label" for="marka">Привод</label>
-                    <select name="marka" id="marka">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
+                    <label class="form-label" for="privod">Привод</label>
+                    <select class="select-field" name="privod" id="privod">
                       <option value="2">Mitsubishi</option>
                       <option value="3">Honda</option>
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
-                    <label class="form-label" for="marka">КПП</label>
-                    <select name="marka" id="marka">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
+                    <label class="form-label" for="kpp">КПП</label>
+                    <select class="select-field" name="kpp" id="kpp">
                       <option value="2">Автомат</option>
                       <option value="3">Механика</option>
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
-                    <label class="form-label" for="marka">Тип топлива</label>
-                    <select name="marka" id="marka">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
+                    <label class="form-label" for="benz">Тип топлива</label>
+                    <select class="select-field" name="benz" id="benz">
                       <option value="2">Бензин</option>
                       <option value="3">Дизель</option>
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
-                    <label class="form-label" for="marka">Оценка аукциона</label>
-                    <select name="marka" id="marka">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
+                    <label class="form-label" for="ozenk">Оценка аукциона</label>
+                    <select class="select-field" name="ozenk" id="ozenk">
                       <option value="2">Оценка 1</option>
                       <option value="3">Оценка 2</option>
                     </select>
                   </div>
 
-                  <div class="column-8 input-wrapper form-floating input-hidden">
+                  <div class="column-8 input-wrapper form-floating input-hidden mb-3 mb-lg-4">
                     <input type="email" class="form-control formInput" id="floatingInput" placeholder="номер лота">
                     <label for="floatingInput">номер лота</label>
                   </div>
@@ -214,7 +214,7 @@
                 </div>
                 <div class="podbor-filter-action">
                   <button class="button podbor-filter-more button--transparent" type="button">
-                    <span class="podbor-filter-more-text">Расширенный поиск</span>
+                    <span class="podbor-filter-more-text">Больше фильтров</span>
                     <img src="img/icons/arrow-down.svg" alt="icon">
                   </button>
                   <button class="podbor-filter-btn button button--primary">
@@ -231,7 +231,7 @@
               <form action="#" class="podbor-filter-form">
                 <div class="podbor-filter-grid">
 
-                  <div class="column-4 select-wrapper">
+                  <div class="column-4 select-wrapper mb-3 mb-lg-4">
                     <label class="form-label" for="marka">марка</label>
                     <select name="marka" id="marka">
                       <option value="2">Mitsubishi</option>
@@ -239,7 +239,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper">
+                  <div class="column-4 select-wrapper mb-3 mb-lg-4">
                     <label class="form-label" for="marka">Модель</label>
                     <select name="marka" id="marka">
                       <option value="2">Outlander</option>
@@ -247,7 +247,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 grid-cols-2">
+                  <div class="column-4 grid-cols-2 mb-3 mb-lg-4">
                     <div class="col">
                       <div class="select-wrapper">
                         <label class="form-label" for="marka">Год от</label>
@@ -268,7 +268,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">пробег, км</div>
                     <div class="grid-cols-2">
                       <div class="col">
@@ -292,7 +292,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">Объем двигателя, л</div>
                     <div class=" grid-cols-2">
                       <div class="col">
@@ -316,7 +316,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">мощность по ПТС, л.с.</div>
                     <div class=" grid-cols-2">
                       <div class="col">
@@ -340,7 +340,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
                     <label class="form-label" for="marka">тип кузова</label>
                     <select name="marka" id="marka">
                       <option value="2">Седан</option>
@@ -348,7 +348,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
                     <label class="form-label" for="marka">КПП</label>
                     <select name="marka" id="marka">
                       <option value="2">Автомат</option>
@@ -356,7 +356,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
                     <label class="form-label" for="marka">Тип топлива</label>
                     <select name="marka" id="marka">
                       <option value="2">Бензин</option>
@@ -364,7 +364,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
                     <label class="form-label" for="marka">Цвет</label>
                     <select name="marka" id="marka">
                       <option value="2">Автомат</option>
@@ -375,7 +375,7 @@
                 </div>
                 <div class="podbor-filter-action">
                   <button class="button podbor-filter-more button--transparent" type="button">
-                    <span class="podbor-filter-more-text">Расширенный поиск</span>
+                    <span class="podbor-filter-more-text">Больше фильтров</span>
                     <img src="img/icons/arrow-down.svg" alt="icon">
                   </button>
                   <button class="podbor-filter-btn button button--primary">
@@ -392,7 +392,7 @@
               <form action="#" class="podbor-filter-form">
                 <div class="podbor-filter-grid">
 
-                  <div class="column-4 select-wrapper">
+                  <div class="column-4 select-wrapper mb-3 mb-lg-4">
                     <label class="form-label" for="marka">марка</label>
                     <select name="marka" id="marka">
                       <option value="2">Mitsubishi</option>
@@ -400,7 +400,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper">
+                  <div class="column-4 select-wrapper mb-3 mb-lg-4">
                     <label class="form-label" for="marka">Модель</label>
                     <select name="marka" id="marka">
                       <option value="2">Outlander</option>
@@ -408,7 +408,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 grid-cols-2">
+                  <div class="column-4 grid-cols-2 mb-3 mb-lg-4">
                     <div class="col">
                       <div class="select-wrapper">
                         <label class="form-label" for="marka">Год от</label>
@@ -429,7 +429,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">пробег, км</div>
                     <div class="grid-cols-2">
                       <div class="col">
@@ -453,7 +453,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">Объем двигателя, л</div>
                     <div class=" grid-cols-2">
                       <div class="col">
@@ -477,7 +477,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 column-wrapper">
+                  <div class="column-4 column-wrapper mb-3 mb-lg-4">
                     <div class="col-label">мощность по ПТС, л.с.</div>
                     <div class=" grid-cols-2">
                       <div class="col">
@@ -501,7 +501,7 @@
                     </div>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
                     <label class="form-label" for="marka">Тип топлива</label>
                     <select name="marka" id="marka">
                       <option value="2">Бензин</option>
@@ -509,7 +509,7 @@
                     </select>
                   </div>
 
-                  <div class="column-4 select-wrapper input-hidden">
+                  <div class="column-4 select-wrapper input-hidden mb-3 mb-lg-4">
                     <label class="form-label" for="marka">тип кузова</label>
                     <select name="marka" id="marka">
                       <option value="2">Седан</option>
@@ -520,7 +520,7 @@
                 </div>
                 <div class="podbor-filter-action">
                   <button class="button button--transparent podbor-filter-more" type="button">
-                    <span class="podbor-filter-more-text">Расширенный поиск</span>
+                    <span class="podbor-filter-more-text">Больше фильтров</span>
                     <img src="img/icons/arrow-down.svg" alt="icon">
                   </button>
                   <button class="podbor-filter-btn button button--primary">
@@ -1066,13 +1066,13 @@
           Оставить заявку
         </h2>
         <div class="d-flex flex-column modalOrderLogoW">
-          <a href="#" class="logo">
+          <div class="logo">
             <img src="img/admin/logo/logo.svg" alt="logo">
-          </a>
-          <a href="tel:+73952199030" class="podbor-filter-phone">
+          </div>
+          <div class="podbor-filter-phone">
             <img src="img/icons/phone.svg" alt="phone">
             +7 3952 199 030
-          </a>
+          </div>
         </div>
       </div>
 
